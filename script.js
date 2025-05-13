@@ -237,4 +237,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialiser l'état du bouton "Retour en haut" au chargement
     setActiveNav();
+    
+    // Protection contre la copie et l'inspection du code
+    // Note: Ceci n'est pas une protection complète, juste une barrière légère
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    });
+    
+    document.addEventListener('keydown', function(e) {
+        // Ctrl+U (afficher le code source)
+        if (e.ctrlKey && e.keyCode == 85) {
+            e.preventDefault();
+            window.location.href = 'fake-source.html';
+            return false;
+        }
+        
+        // Ctrl+Shift+I ou F12 (outils de développement)
+        if ((e.ctrlKey && e.shiftKey && e.keyCode == 73) || e.keyCode == 123) {
+            e.preventDefault();
+            return false;
+        }
+        
+        // Ctrl+Shift+C (inspecteur d'éléments)
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+            e.preventDefault();
+            return false;
+        }
+        
+        // Ctrl+S (enregistrer la page)
+        if (e.ctrlKey && e.keyCode == 83) {
+            e.preventDefault();
+            return false;
+        }
+    });
 });
