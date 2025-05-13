@@ -238,12 +238,58 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialiser l'état du bouton "Retour en haut" au chargement
     setActiveNav();
     
+    // Lazy loading des images pour améliorer les performances
+    function lazyLoadImages() {
+        const images = document.querySelectorAll('img[data-src]');
+        
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => {
+                imageObserver.observe(img);
+            });
+        } else {
+            // Fallback pour les navigateurs qui ne supportent pas IntersectionObserver
+            images.forEach(img => {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+            });
+        }
+    }
+    
+    // Exécuter le lazy loading
+    lazyLoadImages();
+    
     // Protection contre la copie et l'inspection du code
     // Note: Ceci n'est pas une protection complète, juste une barrière légère
     document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
         return false;
     });
+    
+    // Protection avancée contre les outils de développement
+    (function() {
+        function detectDevTools() {
+            const widthThreshold = window.outerWidth - window.innerWidth > 160;
+            const heightThreshold = window.outerHeight - window.innerHeight > 160;
+            
+            if (widthThreshold || heightThreshold) {
+                document.body.innerHTML = '<div style="text-align:center;padding:50px;"><h1>Accès non autorisé</h1><p>L\'utilisation des outils de développement n\'est pas autorisée sur ce site.</p></div>';
+            }
+        }
+        
+        window.addEventListener('resize', detectDevTools);
+        setInterval(detectDevTools, 1000);
+    })();
     
     document.addEventListener('keydown', function(e) {
         // Ctrl+U (afficher le code source)
