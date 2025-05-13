@@ -745,6 +745,22 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.developer-credit {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.developer-credit a {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.developer-credit a:hover {
+    color: var(--light-text);
+    text-decoration: underline;
+}
+
 /* Accessibilité */
 .sr-only {
     position: absolute;
