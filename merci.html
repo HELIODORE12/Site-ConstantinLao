@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Merci pour votre message - Portfolio de Constantin Lao" />
+    <title>Merci - Constantin Lao</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+      .thank-you-container {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+      }
+      
+      .thank-you-icon {
+        font-size: 5rem;
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+      }
+      
+      .thank-you-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+      }
+      
+      .thank-you-text {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin-bottom: 2rem;
+      }
+      
+      .back-button {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background: var(--primary-color);
+        color: var(--light-text);
+        border-radius: var(--border-radius);
+        font-weight: 600;
+        transition: var(--transition);
+        border: 2px solid var(--primary-color);
+      }
+      
+      .back-button:hover {
+        background: var(--secondary-color);
+        border-color: var(--secondary-color);
+        transform: translateY(-3px);
+        box-shadow: var(--box-shadow);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Constantin Lao<span class="dot">.</span></h1>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#a-propos">À propos</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="thank-you-container">
+        <i class="fas fa-check-circle thank-you-icon"></i>
+        <h2 class="thank-you-title">Merci pour votre message!</h2>
+        <p class="thank-you-text">
+          J'ai bien reçu votre message et je vous répondrai dans les plus brefs délais.
+          N'hésitez pas à explorer davantage mon portfolio en attendant.
+        </p>
+        <a href="index.html" class="back-button">Retour à l'accueil</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Constantin Lao<span class="dot">.</span></h3>
+          <p>Ingénieur des travaux en génie civil</p>
+        </div>
+        <div class="footer-links">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="index.html#accueil">Accueil</a></li>
+            <li><a href="index.html#a-propos">À propos</a></li>
+            <li><a href="index.html#competences">Compétences</a></li>
+            <li><a href="index.html#projets">Projets</a></li>
+            <li><a href="index.html#contacts">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Contact</h4>
+          <p>laoukoundaconstantin@gmail.com</p>
+          <p>(+235) 66 26 11 69 / 95 34 60 95</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Constantin Lao. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

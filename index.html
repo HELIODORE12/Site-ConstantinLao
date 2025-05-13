@@ -1,38 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Lao</title>
+    <meta name="description" content="Portfolio de Constantin Laokounda, Ingénieur des travaux en génie civil spécialisé dans la conception et la supervision de projets d'infrastructure au Tchad." />
+    <meta name="keywords" content="Constantin Laokounda, ingénieur génie civil, projets d'infrastructure, construction, Tchad, N'Djamena, portfolio" />
+    <meta name="author" content="Constantin Laokounda" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Constantin Laokounda - Ingénieur des travaux en génie civil" />
+    <meta property="og:description" content="Portfolio professionnel de Constantin Laokounda, Ingénieur des travaux en génie civil avec plus de 15 ans d'expérience." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://constantinlao.com" />
+    <meta property="og:image" content="images/profile.jpg" />
+    <title>Constantin Lao - Ingénieur des travaux en génie civil</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <main>
-      <header>
-        <div class="logo">
-          <h1>Constantin Lao<span class="dot">.</span></h1>
-        </div>
-        <nav class="nav-bar">
-          <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header>
+      <div class="logo">
+        <h1>Constantin Lao<span class="dot">.</span></h1>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#accueil" class="active">Accueil</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
 
-      <section class="hero">
+    <main>
+      <section id="accueil" class="hero">
         <div class="hero-content">
-          <h2>Ingénieur des traveaux en génie civil</h2>
+          <h2>Ingénieur des travaux en génie civil</h2>
           <p>
-            Je suis un développeur web passionné par la création de sites et
-            d'applications web modernes.
+            Spécialisé dans la conception et la supervision de projets d'infrastructure avec plus de 15 ans d'expérience.
           </p>
-          <a href="#" class="cta-button">Voir mes projets</a>
+          <div class="cta-buttons">
+            <a href="#projets" class="cta-button">Voir mes projets</a>
+            <a href="#contacts" class="cta-button secondary">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Vous pouvez ajouter une image ici -->
+        </div>
+      </section>
+
+      <section id="a-propos" class="about">
+        <div class="section-header">
+          <h2>À propos de moi</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <!-- Insérer une photo professionnelle ici -->
+            <img src="images/WhatsApp Image 2025-03-02 à 11.45.25_7502884d.jpg" alt="Constantin Laokounda" />
+          </div>
+          <div class="about-text">
+            <h3>Qui suis-je?</h3>
+            <p>
+              Ingénieur des travaux en génie civil avec une expertise approfondie dans la conception, 
+              la planification et la supervision de projets d'infrastructure. Mon parcours professionnel 
+              m'a permis de développer des compétences solides en gestion de projet, analyse structurelle 
+              et coordination d'équipes multidisciplinaires.
+            </p>
+            <p>
+              Passionné par l'innovation dans le domaine de la construction durable, 
+              je m'efforce d'intégrer des solutions respectueuses de l'environnement 
+              dans chacun de mes projets.
+            </p>
+            <div class="personal-info">
+              <div class="info-item">
+                <span class="info-label">Nom:</span>
+                <span class="info-value">Constantin Lao</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Expérience:</span>
+                <span class="info-value">15+ ans</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email:</span>
+                <span class="info-value">laoukoundaconstantin@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Tél:</span>
+                <span class="info-value">(+235) 66 26 11 69 / 95 34 60 95</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Disponibilité:</span>
+                <span class="info-value">Disponible pour consultation</span>
+              </div>
+            </div>
+            <a href="Doc/Curriculum Vitae.pdf" class="download-cv" download>Télécharger mon CV <i class="fas fa-download"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="competences" class="skills">
+        <div class="section-header">
+          <h2>Mes compétences</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="skills-content">
+          <div class="technical-skills">
+            <h3>Compétences techniques</h3>
+            <div class="skill-item">
+              <div class="skill-name">Conception structurelle</div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 95%"></div>
+              </div>
+              <div class="skill-percentage">95%</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">Gestion de projet</div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%"></div>
+              </div>
+              <div class="skill-percentage">90%</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">AutoCAD</div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+              <div class="skill-percentage">85%</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">Analyse de coûts</div>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+              <div class="skill-percentage">80%</div>
+            </div>
+          </div>
+          <div class="soft-skills">
+            <h3>Compétences personnelles</h3>
+            <div class="skill-grid">
+              <div class="soft-skill-item">
+                <i class="fas fa-users"></i>
+                <h4>Travail d'équipe</h4>
+              </div>
+              <div class="soft-skill-item">
+                <i class="fas fa-comments"></i>
+                <h4>Communication</h4>
+              </div>
+              <div class="soft-skill-item">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Résolution de problèmes</h4>
+              </div>
+              <div class="soft-skill-item">
+                <i class="fas fa-tasks"></i>
+                <h4>Organisation</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="projects">
+        <div class="section-header">
+          <h2>Mes projets</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+          <button class="filter-btn" data-filter="batiment">Bâtiment</button>
+          <button class="filter-btn" data-filter="environnement">Environnement</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-category="infrastructure">
+            <div class="project-image">
+              <img src="images/WhatsApp Image 2025-03-02 à 11.45.11_4413685c.jpg" alt="Projet de pont" />
+            </div>
+            <div class="project-info">
+              <h3>Pont suspendu de Rivière-Claire</h3>
+              <p>Conception et supervision de la construction d'un pont suspendu de 120m.</p>
+              <div class="project-tags">
+                <span>Infrastructure</span>
+                <span>2022</span>
+              </div>
+              <a href="#" class="project-link">Voir les détails</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="batiment">
+            <div class="project-image">
+              <img src="images/WhatsApp Image 2025-03-02 à 11.45.17_bb8a49a2.jpg" alt="Complexe résidentiel" />
+            </div>
+            <div class="project-info">
+              <h3>Complexe résidentiel Les Jardins</h3>
+              <p>Conception structurelle d'un complexe résidentiel de 5 étages.</p>
+              <div class="project-tags">
+                <span>Bâtiment</span>
+                <span>2020</span>
+              </div>
+              <a href="#" class="project-link">Voir les détails</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="environnement">
+            <div class="project-image">
+              <img src="images/WhatsApp Image 2025-03-02 à 11.45.20_eb0a2930.jpg" alt="Système de traitement des eaux" />
+            </div>
+            <div class="project-info">
+              <h3>Système de traitement des eaux</h3>
+              <p>Conception d'un système écologique de traitement des eaux usées.</p>
+              <div class="project-tags">
+                <span>Environnement</span>
+                <span>2021</span>
+              </div>
+              <a href="#" class="project-link">Voir les détails</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="infrastructure">
+            <div class="project-image">
+              <img src="images/WhatsApp Image 2025-03-02 à 11.45.21_01679c32.jpg" alt="Projet d'infrastructure" />
+            </div>
+            <div class="project-info">
+              <h3>Route nationale N'Djamena-Abéché</h3>
+              <p>Supervision et contrôle qualité de la construction d'une route nationale de 400km.</p>
+              <div class="project-tags">
+                <span>Infrastructure</span>
+                <span>2023</span>
+              </div>
+              <a href="#" class="project-link">Voir les détails</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="batiment">
+            <div class="project-image">
+              <img src="images/WhatsApp Image 2025-03-02 à 11.45.21_ed9926e5.jpg" alt="Bâtiment administratif" />
+            </div>
+            <div class="project-info">
+              <h3>Centre administratif de N'Djamena</h3>
+              <p>Conception et supervision de la construction d'un bâtiment administratif moderne.</p>
+              <div class="project-tags">
+                <span>Bâtiment</span>
+                <span>2019</span>
+              </div>
+              <a href="#" class="project-link">Voir les détails</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="environnement">
+            <div class="project-image">
+              <img src="images/WhatsApp Image 2025-03-02 à 11.45.23_e3760aee.jpg" alt="Projet environnemental" />
+            </div>
+            <div class="project-info">
+              <h3>Parc solaire de Moundou</h3>
+              <p>Étude et conception d'un parc solaire pour alimenter la ville de Moundou.</p>
+              <div class="project-tags">
+                <span>Environnement</span>
+                <span>2022</span>
+              </div>
+              <a href="#" class="project-link">Voir les détails</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!--
+          Section#contacts.contact:
+          - Affiche les informations de contact du portfolio (adresse, email, téléphone, réseaux sociaux)
+          - Permet à l'utilisateur de remplir un formulaire de contact pour envoyer un email
+        -->      <section id="contacts" class="contact">
+        <div class="section-header">
+          <h2>Contactez-moi</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Adresse</h3>
+                <p>N'Djamena - Tchad</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>laoukoundaconstantin@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Téléphone</h3>
+                <p>(+235) 66 26 11 69 / 95 34 60 95</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" action="https://formspree.io/f/xbjvnpzw" method="POST">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Votre email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Sujet" required />
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            </div>
+            <input type="hidden" name="_next" value="https://constantinlao.com/merci.html">
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+            <input type="text" name="_gotcha" style="display:none">
+            <button type="submit" class="submit-btn">Envoyer le message</button>
+          </form>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Constantin Lao<span class="dot">.</span></h3>
+          <p>Ingénieur des travaux en génie civil</p>
+        </div>
+        <div class="footer-links">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Abonnez-vous pour recevoir mes dernières actualités</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Votre email" required />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Constantin Lao. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
   </body>
 </html>
