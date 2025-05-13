@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     const backToTopBtn = document.querySelector('.back-to-top');
     const themeToggle = document.querySelector('.theme-toggle');
+    const preloader = document.querySelector('.preloader');
+    
+    // Préchargeur
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            preloader.classList.add('fade-out');
+        }, 500);
+    });
     
     // Vérifier si un thème est stocké dans localStorage
     const currentTheme = localStorage.getItem('theme');

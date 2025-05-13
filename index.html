@@ -18,41 +18,56 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <!-- Préchargeur -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+
     <header>
       <div class="logo">
-        <h1>Constantin Lao<span class="dot">.</span></h1>
+        <h1>Constantin Laokounda<span class="dot">.</span></h1>
       </div>
-      <nav class="nav-bar">
+      <nav class="nav-bar" aria-label="Navigation principale">
         <ul>
-          <li><a href="#accueil" class="active">Accueil</a></li>
+          <li><a href="#accueil" class="active" aria-current="page">Accueil</a></li>
           <li><a href="#a-propos">À propos</a></li>
           <li><a href="#competences">Compétences</a></li>
           <li><a href="#projets">Projets</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
-      <div class="theme-toggle">
-        <i class="fas fa-sun"></i>
+      <div class="theme-toggle" aria-label="Changer de thème" role="button" tabindex="0">
+        <i class="fas fa-sun" aria-hidden="true"></i>
+        <span class="sr-only">Changer de thème</span>
       </div>
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
+      <div class="menu-toggle" aria-label="Menu mobile" role="button" tabindex="0">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+        <span class="sr-only">Ouvrir le menu</span>
       </div>
     </header>
 
     <main>
       <section id="accueil" class="hero">
         <div class="hero-content">
-          <h2>Ingénieur des travaux en génie civil</h2>
-          <p>
-            Spécialisé dans la conception et la supervision de projets d'infrastructure avec plus de 15 ans d'expérience.
+          <h2 class="fade-in">Ingénieur des travaux en génie civil</h2>
+          <p class="fade-in delay-1">
+            Spécialisé dans la conception et la supervision de projets d'infrastructure avec plus de 12 ans d'expérience.
           </p>
-          <div class="cta-buttons">
+          <div class="cta-buttons fade-in delay-2">
             <a href="#projets" class="cta-button">Voir mes projets</a>
             <a href="#contacts" class="cta-button secondary">Me contacter</a>
           </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-image fade-in delay-3">
           <!-- Vous pouvez ajouter une image ici -->
+           <!-- <img src="images\OIP.jpeg" alt="">
+           <img src="images/téléchargement.jpeg" alt="">
+           <img src="images\OIP.jpeg" alt=""> -->
+           <img src="images\WhatsApp Image 2025-03-02 à 11.45.21_ed9926e5.jpg" alt="">
         </div>
       </section>
 
@@ -82,11 +97,11 @@
             <div class="personal-info">
               <div class="info-item">
                 <span class="info-label">Nom:</span>
-                <span class="info-value">Constantin Lao</span>
+                <span class="info-value">Constantin Laokounda</span>
               </div>
               <div class="info-item">
                 <span class="info-label">Expérience:</span>
-                <span class="info-value">15+ ans</span>
+                <span class="info-value">12+ ans</span>
               </div>
               <div class="info-item">
                 <span class="info-label">Email:</span>
@@ -357,8 +372,9 @@
       </div>
     </footer>
 
-    <a href="#" class="back-to-top">
-      <i class="fas fa-arrow-up"></i>
+    <a href="#" class="back-to-top" aria-label="Retour en haut de page" role="button">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+      <span class="sr-only">Retour en haut</span>
     </a>
 
     <script src="script.js"></script>
